@@ -1,30 +1,28 @@
-# Desafio de programação orientada a objetos
+# Desafio de programação orientada a testes
 
-   
-Uma pequena empresa em crescimento precisa de uma modelagem de dados dinâmica! que permita a expansão de seus usuários e departamentos, e que matenha ou melhore a segurança, padrões e boas práticas, refatore o código proposto.
-    
-- Proteja a classe `Employee` para não ser instânciada diretamente.
-- Torne obrigatório a implementação dos métodos da classe `Employee`, implemente-os se for necessários.
-- Proteja o atributo `department` da classe `Manager` para que seja acessado somente através do método `get_department`.
-- Faça a correção dos métodos para que a herança funcione corretamente.
-- Proteja o atributo `sales` da classe `Seller` para que não seja acessado diretamente,
-  crie um método chamado `get_sales` para retornar o valor do atributo e `put_sales` para acrescentar valores a esse atributo, lembrando que as vendas são acumulativas
-- Implemente o método `get_department` que retorna o nome do departamento e `set_department` que muda o nome do departamento para as classes `Manager` e `Seller`
-- Padronize uma carga horária de 8 horas para todos os funcionários.
-- O cálculo do metodo `calc_bonus` do Vendedor dever ser calculado pelo total de suas vendas vezes 0.15
+Dark sky é um serviço de previsão do tempo por API. Temos uma função que faz uma requisição para a api
+do Dark sky passando a latitude e a longitude de algum lugar no planeta e a api retorna a temperatura. Nossa função
+converte para celsius e retorna o valor da temperatura.
 
 
+Escreva um teste que seja possível testar off-line a chamada para api do Dark sky e a conversão para celsius.
+Use a bibliteca Pytest e os seguntes dados para testar a função **get_temperature**.
+
+    lat = -14.235004
+    lng = -51.92528
+    temperature = 62
+    expected = 16
+
+A função a ser testada esta no arquivo **main.py** e a implementação do teste deve ser feita no arquivo **test_main.py**. O objetivo deste desafio é que você pratique a criação de testes unitários, por isso crie os testes pensando nos cenários possíveis de erro e acerto, de modo que seus testes possam cobrir o maior número de casos. Após a criação dos testes, use a funcionalidade de Code Review para validar sua implementação com a [comunidade](https://comunidade.codenation.dev).
 
 ## Tópicos
 
 Neste desafio você vai aprender:
 
-- Funções e Classes
-- Herança
-- Composição
-- Métodos de classe
-- Métodos de Instância
-- Métodos estáticos
+- Testes unitários
+- Mock
+- Pytest
+- Monkeypatch
 
 ## Requisitos
 
